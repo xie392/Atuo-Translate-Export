@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#CRX-APP {
+  font-size: 16px;
+}
+
+/* 
+#CRX-APP *{
+  padding: 0;
+  margin: 0;
+} */
+
+#CRX-APP .el-button--primary {
+  background-color: var(--el-button-bg-color, var(--el-color-white)) !important;
+}
+
+@layer components {
+  /* [type='button'],
+  [type='reset'],
+  [type='submit'],
+  button {
+    background-color: var(--el-button-bg-color, var(--el-color-white)) !important;
+  } */
+
+}

@@ -1,0 +1,42 @@
+{
+    "name": "Atuo-Translate-Export",
+    "author": "YuHong",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "description": "自动提取网页文本生成excel",
+    "icons": {
+        "16": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "自动提取网页文本生成excel",
+        "default_icon": {
+            "16": "images/logo.png",
+            "48": "images/logo.png",
+            "128": "images/logo.png"
+        }
+    },
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
